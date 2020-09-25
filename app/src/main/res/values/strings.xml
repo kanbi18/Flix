@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlicksApp</string>
+    <string name="movie_desc">Blah blah blah, Lorem ipsum , ah blah blah, Lorem ipsum , blah blah blah , lorem ipsum text</string>
+    <string name="movie_title">Apollo</string>
+</resources>
