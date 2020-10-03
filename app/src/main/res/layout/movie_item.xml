@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
+    android:id="@+id/container"
     android:background="@android:color/background_dark"
     >
 
@@ -25,6 +26,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@android:color/holo_blue_light"
+        android:transitionName="profile"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/movie_poster" />
 

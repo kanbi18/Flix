@@ -1,6 +1,7 @@
 package com.example.flicksapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.utils.widget.MockView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -8,6 +9,7 @@ import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.example.flicksapp.models.Movie;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -17,6 +19,7 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         RecyclerView movieView = findViewById(R.id.moviesList);
         movies = new ArrayList<>();
+
 
         final MoviesAdapter moviesAdapter = new MoviesAdapter(this, movies);
 
@@ -64,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
+
+
 
 }
